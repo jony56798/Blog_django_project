@@ -1,6 +1,6 @@
-# Simple Blog (Django)
+# Blog project (Django)
 
-Beginner-friendly Django blog with auth, CRUD posts, comments, pagination, and search.
+Django blog project with auth, CRUD posts, comments, pagination, and search.
 
 ## Quickstart
 ```bash
