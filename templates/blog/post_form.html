@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="h4">{{ form.instance.pk|yesno:"Edit Post,New Post" }}</h1>
+<form method="post" novalidate>
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button class="btn btn-success">Save</button>
+  <a class="btn btn-secondary" href="{% url 'post_list' %}">Cancel</a>
+</form>
+{% endblock %}
